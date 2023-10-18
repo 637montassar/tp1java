@@ -4,11 +4,11 @@ public class Vecteur{
     public Vecteur(int abscisse,int ordonnee ){
         this.abscisse = abscisse;
         this.ordonnee  = ordonnee ;
-    } 
+    } // constructeur
 
     public double longeur(){
         return (Math.sqrt(abscisse * abscisse + ordonnee  * ordonnee ));
-    }
+    } 
 
     public boolean PlusPetitQue(Vecteur v){
         return this.longeur() < v.longeur();
@@ -22,7 +22,7 @@ public class Vecteur{
     public static Vecteur addition(Vecteur i,Vecteur j ){
         return new Vecteur(i.abscisse + j.abscisse, i.ordonnee + j.ordonnee );
 
-    } /*Addition de deux vecteurs et retourner le vecteur somme */
+    } /*Addition de deux vecteurs et retourner le vecteur somme , methode de classe */
 
     @Override
     public String toString(){

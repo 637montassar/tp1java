@@ -11,8 +11,9 @@ class EssaiVecteur{
         Vecteur v2= new Vecteur(Integer.parseInt(args[2]),Integer.parseInt(args[3]));
 
         System.out.println("v1 : "+v1);
-        System.out.println("Longeur du "+v1+": "+v1.longeur());
+        System.out.println("La longeur du "+v1+": "+v1.longeur());
         System.out.println("v2 : "+v2);
+        System.out.println("La longeur du "+v2+": "+v2.longeur());
         
 
         if (v1.PlusPetitQue(v2)){
@@ -21,7 +22,7 @@ class EssaiVecteur{
         else if (v2.PlusPetitQue(v1)){
             System.out.println("le "+v2+" est plus petit que le "+v1);
         }
-        else{
+        else {
             System.out.println("les deux vecteurs sont egaux"); // cas d'egalité
         }
 
