@@ -1,16 +1,15 @@
 import java.util.Stack;
 
-
-public class Pile{
+class PileA {
     private Stack<Integer> stack;
     private int max;
 
-    public Pile(int max) {
+    public PileA(int max) {
         stack = new Stack<>();
         this.max = max;
     }
 
-    public Pile() {
+    public PileA() {
         this(100); 
     }
     public void emplier(int n){
